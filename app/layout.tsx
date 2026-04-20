@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Reception.ai",
+  title: "Elexio",
   description: "AI-receptionist för svenska företag",
 };
 

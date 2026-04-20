@@ -23,7 +23,7 @@ export default function Kontakt() {
               <div className="space-y-8">
                 <div>
                   <div className="text-xs uppercase tracking-wider text-gray-400 mb-2">Email</div>
-                  <div>hej@reception.ai</div>
+                  <div>hej@elexio.ai</div>
                 </div>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-gray-400 mb-2">Telefon</div>

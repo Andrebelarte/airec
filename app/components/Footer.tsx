@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <div className="text-lg font-bold mb-4">Reception.ai</div>
+            <div className="text-lg font-bold mb-4">Elexio</div>
             <p className="text-sm text-gray-600 leading-relaxed">
               AI-receptionist för svenska företag.
               Alltid tillgänglig. Alltid professionell.
@@ -27,7 +27,7 @@ export default function Footer() {
           <div>
             <div className="text-xs uppercase tracking-wider text-gray-400 mb-4">Kontakt</div>
             <div className="space-y-2 text-sm">
-              <div>hej@reception.ai</div>
+              <div>hej@elexio.ai</div>
               <div>+46 8 123 45 67</div>
               <div>Stockholm</div>
             </div>
@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-200 mt-12 pt-8 text-xs text-gray-400">
-          2024 Reception.ai
+          2024 Elexio
         </div>
       </div>
     </footer>

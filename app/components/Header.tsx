@@ -18,7 +18,7 @@ export default function Header() {
     <header className="border-b-2 border-black">
       <div className="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
         <Link href="/" className="text-lg font-bold tracking-tight">
-          Reception.ai
+          Elexio
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm">

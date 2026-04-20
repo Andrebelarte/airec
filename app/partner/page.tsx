@@ -131,7 +131,7 @@ export default function Partner() {
           <div className="grid md:grid-cols-3 gap-12">
             {[
               { num: "01", title: "Ansök", desc: "Fyll i formuläret. Vi hör av oss inom 24h." },
-              { num: "02", title: "Sälj", desc: "Presentera Reception.ai för ditt nätverk. Vi ger dig material." },
+              { num: "02", title: "Sälj", desc: "Presentera Elexio för ditt nätverk. Vi ger dig material." },
               { num: "03", title: "Tjäna", desc: "30% provision utbetalas varje månad automatiskt." },
             ].map((step, i) => (
               <div key={i}>

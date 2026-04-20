@@ -279,7 +279,7 @@ export default function Foretag() {
                 Redo att sluta missa samtal?
               </h2>
               <p className="text-gray-400">
-                Boka en demo så visar vi hur Reception.ai kan hjälpa ditt företag.
+                Boka en demo så visar vi hur Elexio kan hjälpa ditt företag.
               </p>
             </div>
             <div className="flex md:justify-end">
