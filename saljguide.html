@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reception.ai - Säljguide för Partners</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #111;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        @media print {
+            body { padding: 20px; }
+            .page-break { page-break-before: always; }
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #000;
+        }
+        h3 {
+            font-size: 16px;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 2px solid #000;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #444;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border: 2px solid #000;
+            margin: 30px 0;
+        }
+        .stat {
+            padding: 20px;
+            text-align: center;
+            border-right: 2px solid #000;
+        }
+        .stat:last-child {
+            border-right: none;
+        }
+        .stat-value {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .price-card {
+            border: 2px solid #000;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .price-card.featured {
+            background: #000;
+            color: #fff;
+        }
+        .price-card h3 {
+            margin-top: 0;
+        }
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .price-sub {
+            color: #666;
+            font-size: 14px;
+        }
+        .price-card.featured .price-sub {
+            color: #999;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: #f5f5f5;
+            border: 2px solid #000;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .commission-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .commission-card {
+            border: 2px solid #000;
+            padding: 20px;
+            text-align: center;
+        }
+        .commission-card.dark {
+            background: #000;
+            color: #fff;
+        }
+        .steps {
+            counter-reset: step;
+        }
+        .step {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .step-num {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ccc;
+            min-width: 40px;
+        }
+        .sales-tip {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .sales-tip h4 {
+            margin-bottom: 8px;
+        }
+        .faq {
+            margin: 20px 0;
+        }
+        .faq-item {
+            margin-bottom: 16px;
+        }
+        .faq-q {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .faq-a {
+            color: #444;
+        }
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="subtitle">Partnerguide</div>
+    <h1>Reception.ai</h1>
+    <p>Allt du behöver veta för att sälja AI-receptionist</p>
+</div>
+
+<h2>Vad är Reception.ai?</h2>
+<p><strong>Reception.ai är en AI-receptionist som svarar på telefonsamtal dygnet runt.</strong> Den pratar svenska, bokar möten, besvarar frågor och tar meddelanden - precis som en mänsklig receptionist, men tillgänglig 24/7 till en bråkdel av kostnaden.</p>
+
+<div class="stats">
+    <div class="stat">
+        <div class="stat-value">24/7</div>
+        <div class="stat-label">Tillgänglig</div>
+    </div>
+    <div class="stat">
+        <div class="stat-value">&lt;1s</div>
+        <div class="stat-label">Svarstid</div>
+    </div>
+    <div class="stat">
+        <div class="stat-value">90%</div>
+        <div class="stat-label">Besparing</div>
+    </div>
+    <div class="stat">
+        <div class="stat-value">∞</div>
+        <div class="stat-label">Kapacitet</div>
+    </div>
+</div>
+
+<h3>Vad gör AI-receptionisten?</h3>
+<ul>
+    <li><strong>Svarar på samtal</strong> - Professionellt i kundens företagsnamn</li>
+    <li><strong>Bokar möten</strong> - Synkar med kundens kalender automatiskt</li>
+    <li><strong>Besvarar frågor</strong> - Öppettider, priser, lediga tider, vägbeskrivning</li>
+    <li><strong>Tar meddelanden</strong> - Skickar notis till kunden via email/SMS</li>
+    <li><strong>Kopplar vidare</strong> - Viktiga samtal kopplas till rätt person</li>
+    <li><strong>Filtrerar spam</strong> - Hanterar säljsamtal och oönskade samtal</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>Din provision - 30% recurring</h2>
+<p>Som partner får du <strong>30% provision på alla kunder du säljer in</strong>. Provisionen betalas ut varje månad så länge kunden är aktiv. Ingen startavgift.</p>
+
+<div class="commission-grid">
+    <div class="commission-card">
+        <div style="font-size: 14px; color: #666;">Start-kund</div>
+        <div style="font-size: 12px; color: #999; margin-bottom: 8px;">2 495 kr/mån</div>
+        <div style="font-size: 28px; font-weight: bold;">749 kr</div>
+        <div style="font-size: 12px; color: #666;">per kund/månad</div>
+    </div>
+    <div class="commission-card">
+        <div style="font-size: 14px; color: #666;">Pro-kund</div>
+        <div style="font-size: 12px; color: #999; margin-bottom: 8px;">4 995 kr/mån</div>
+        <div style="font-size: 28px; font-weight: bold;">1 499 kr</div>
+        <div style="font-size: 12px; color: #666;">per kund/månad</div>
+    </div>
+    <div class="commission-card dark">
+        <div style="font-size: 14px; color: #999;">Enterprise-kund</div>
+        <div style="font-size: 12px; color: #666; margin-bottom: 8px;">9 995 kr/mån</div>
+        <div style="font-size: 28px; font-weight: bold;">2 999 kr</div>
+        <div style="font-size: 12px; color: #999;">per kund/månad</div>
+    </div>
+</div>
+
+<h3>Räkneexempel - din månadsintäkt</h3>
+<table>
+    <tr>
+        <th>Antal kunder</th>
+        <th>Plan</th>
+        <th>Din intäkt/månad</th>
+        <th>Din intäkt/år</th>
+    </tr>
+    <tr>
+        <td>5 kunder</td>
+        <td>Pro</td>
+        <td>7 495 kr</td>
+        <td>89 940 kr</td>
+    </tr>
+    <tr>
+        <td>10 kunder</td>
+        <td>Pro</td>
+        <td>14 990 kr</td>
+        <td>179 880 kr</td>
+    </tr>
+    <tr>
+        <td>5 kunder</td>
+        <td>Enterprise</td>
+        <td>14 995 kr</td>
+        <td>179 940 kr</td>
+    </tr>
+    <tr>
+        <td>10 kunder</td>
+        <td>Mix</td>
+        <td>~20 000 kr</td>
+        <td>~240 000 kr</td>
+    </tr>
+</table>
+
+<h3>Livstid-försäljning (engångsköp)</h3>
+<p>Kunder kan också köpa en <strong>Livstid-licens för 49 995 kr</strong>. Din provision: <strong>14 999 kr</strong> per såld licens.</p>
+
+<div class="page-break"></div>
+
+<h2>Prisplaner - Vad du säljer</h2>
+
+<div class="price-card">
+    <h3>Start - 2 495 kr/mån</h3>
+    <p style="color: #666; margin-bottom: 16px;">För småföretag som vill komma igång</p>
+    <ul>
+        <li>100 samtal/månad</li>
+        <li>Svensk AI-röst</li>
+        <li>Öppettider & info</li>
+        <li>Email-notiser</li>
+        <li>Grundläggande statistik</li>
+        <li>Support via email</li>
+    </ul>
+</div>
+
+<div class="price-card featured">
+    <div style="font-size: 12px; text-transform: uppercase; margin-bottom: 8px;">Populärast</div>
+    <h3 style="color: #fff;">Pro - 4 995 kr/mån</h3>
+    <p style="color: #999; margin-bottom: 16px;">För växande företag med fler samtal</p>
+    <ul style="color: #fff;">
+        <li>500 samtal/månad</li>
+        <li>Allt i Start</li>
+        <li>Kalenderintegration</li>
+        <li>Automatisk bokning</li>
+        <li>Samtalsinspelning</li>
+        <li>SMS-notiser</li>
+        <li>Vidarekoppling</li>
+        <li>Prioriterad support</li>
+    </ul>
+</div>
+
+<div class="price-card">
+    <h3>Enterprise - 9 995 kr/mån</h3>
+    <p style="color: #666; margin-bottom: 16px;">För företag som behöver allt</p>
+    <ul>
+        <li>Obegränsade samtal</li>
+        <li>Allt i Pro</li>
+        <li>Flera telefonnummer</li>
+        <li>Anpassad AI-röst</li>
+        <li>API-tillgång</li>
+        <li>CRM-integration</li>
+        <li>Dedikerad kontaktperson</li>
+        <li>SLA-garanti</li>
+    </ul>
+</div>
+
+<div class="price-card">
+    <h3>Livstid - 49 995 kr (engångsköp)</h3>
+    <p style="color: #666; margin-bottom: 16px;">Betala en gång, använd för alltid</p>
+    <ul>
+        <li>Alla Enterprise-funktioner</li>
+        <li>Obegränsade samtal för alltid</li>
+        <li>Livstids uppdateringar</li>
+        <li>Prioriterad support för alltid</li>
+    </ul>
+</div>
+
+<div class="page-break"></div>
+
+<h2>Så säljer du Reception.ai</h2>
+
+<div class="steps">
+    <div class="step">
+        <div class="step-num">01</div>
+        <div>
+            <h3 style="margin-top: 0;">Identifiera problemet</h3>
+            <p>Fråga kunden: "Hur många samtal missar ni per dag/vecka?" eller "Vad händer när ni inte kan svara i telefon?" De flesta företag vet att de missar samtal men har ingen lösning.</p>
+        </div>
+    </div>
+    <div class="step">
+        <div class="step-num">02</div>
+        <div>
+            <h3 style="margin-top: 0;">Visa på kostnaden</h3>
+            <p>En mänsklig receptionist kostar ~35 000-45 000 kr/mån (inkl. arbetsgivaravgifter). Reception.ai kostar från 2 495 kr/mån. Det är en besparing på över 90%.</p>
+        </div>
+    </div>
+    <div class="step">
+        <div class="step-num">03</div>
+        <div>
+            <h3 style="margin-top: 0;">Förklara fördelarna</h3>
+            <p>24/7 tillgänglighet, aldrig sjuk, aldrig semester, obegränsad kapacitet, svarar alltid direkt. AI:n blir aldrig trött eller på dåligt humör.</p>
+        </div>
+    </div>
+    <div class="step">
+        <div class="step-num">04</div>
+        <div>
+            <h3 style="margin-top: 0;">Boka en demo</h3>
+            <p>Låt kunden se och höra AI:n i aktion. Vi håller demon och du får provisionen när de blir kund.</p>
+        </div>
+    </div>
+</div>
+
+<div class="sales-tip">
+    <h4>Säljargument som fungerar:</h4>
+    <ul>
+        <li>"62% av samtal sker utanför kontorstid - missar ni dem?"</li>
+        <li>"85% av kunder ringer inte tillbaka om ingen svarar"</li>
+        <li>"Kunder lägger på efter 8 sekunder om ingen svarar"</li>
+        <li>"En mänsklig receptionist kostar 450 000 kr/år - detta kostar under 60 000 kr/år"</li>
+        <li>"Ingen bindningstid - testa en månad och se resultatet"</li>
+    </ul>
+</div>
+
+<h2>Målgrupper - Vem ska du kontakta?</h2>
+
+<p>Reception.ai fungerar för alla företag som tar emot telefonsamtal, men dessa branscher är extra lämpliga:</p>
+
+<table>
+    <tr>
+        <th>Bransch</th>
+        <th>Varför det passar</th>
+    </tr>
+    <tr>
+        <td>Tandläkare & Vårdmottagningar</td>
+        <td>Hög samtalsvolym, bokningar, patienter ringer ofta utanför öppettider</td>
+    </tr>
+    <tr>
+        <td>Konsultbolag & Advokater</td>
+        <td>Vill fokusera på klientarbete, inte svara i telefon</td>
+    </tr>
+    <tr>
+        <td>Frisörer & Skönhetssalonger</td>
+        <td>Kan inte svara medan de jobbar med kunder</td>
+    </tr>
+    <tr>
+        <td>Fastighetsbolag</td>
+        <td>Många inkommande frågor om lediga objekt</td>
+    </tr>
+    <tr>
+        <td>Restauranger & Hotell</td>
+        <td>Bokningar dygnet runt, hektisk miljö</td>
+    </tr>
+    <tr>
+        <td>Verkstäder & Hantverkare</td>
+        <td>Ute på jobb, kan inte svara i telefon</td>
+    </tr>
+    <tr>
+        <td>Gym & Träningsanläggningar</td>
+        <td>Medlemsfrågor, nya intressenter ringer hela tiden</td>
+    </tr>
+    <tr>
+        <td>E-handel med telefonsupport</td>
+        <td>Kundfrågor, orderstatus, returer</td>
+    </tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>AI vs Mänsklig receptionist</h2>
+
+<table>
+    <tr>
+        <th>Egenskap</th>
+        <th>AI-receptionist</th>
+        <th>Mänsklig receptionist</th>
+    </tr>
+    <tr>
+        <td>Tillgänglighet</td>
+        <td><strong>24/7/365</strong></td>
+        <td>8 tim/dag, 5 dagar/vecka</td>
+    </tr>
+    <tr>
+        <td>Svarstid</td>
+        <td><strong>Under 1 sekund</strong></td>
+        <td>Varierar, kan missa samtal</td>
+    </tr>
+    <tr>
+        <td>Samtidiga samtal</td>
+        <td><strong>Obegränsat</strong></td>
+        <td>1 åt gången</td>
+    </tr>
+    <tr>
+        <td>Kostnad/månad</td>
+        <td><strong>2 495 - 9 995 kr</strong></td>
+        <td>35 000 - 45 000 kr</td>
+    </tr>
+    <tr>
+        <td>Kostnad/år</td>
+        <td><strong>~60 000 kr (Pro)</strong></td>
+        <td>~450 000 kr</td>
+    </tr>
+    <tr>
+        <td>Semester & sjukdagar</td>
+        <td><strong>Aldrig borta</strong></td>
+        <td>~30+ dagar/år</td>
+    </tr>
+    <tr>
+        <td>Upplärning</td>
+        <td><strong>Direkt klar</strong></td>
+        <td>Veckor till månader</td>
+    </tr>
+    <tr>
+        <td>Konsekvent kvalitet</td>
+        <td><strong>Alltid samma nivå</strong></td>
+        <td>Varierar med dagsform</td>
+    </tr>
+</table>
+
+<div class="highlight-box">
+    <h3 style="margin-top: 0;">Årlig besparing för kunden</h3>
+    <p style="font-size: 24px; font-weight: bold; margin: 16px 0;">~390 000 kr per år</p>
+    <p style="margin-bottom: 0;">Jämfört med att anställa en mänsklig receptionist. Och AI:n är tillgänglig dygnet runt!</p>
+</div>
+
+<h2>Vanliga invändningar och svar</h2>
+
+<div class="faq">
+    <div class="faq-item">
+        <div class="faq-q">"Kunder vill prata med en riktig människa"</div>
+        <div class="faq-a">AI:n låter naturlig och professionell. De flesta märker inte skillnaden. Och viktigast: AI:n svarar alltid - till skillnad från en telefon som ringer ut.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">"Vi har redan en receptionist"</div>
+        <div class="faq-a">Perfekt - AI:n kan ta över utanför kontorstid, vid lunch, semester och sjukdom. Ett komplement som säkerställer att ni aldrig missar samtal.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">"Det låter dyrt"</div>
+        <div class="faq-a">2 495 kr/mån är ungefär kostnaden för 1 missa affär. Hur många samtal missar ni per månad? Varje besvarat samtal är en potentiell kund.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">"Vad händer om AI:n inte kan svara?"</div>
+        <div class="faq-a">AI:n tar emot meddelandet och skickar notis direkt. Viktiga samtal kan kopplas vidare till rätt person automatiskt.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">"Vi vill testa först"</div>
+        <div class="faq-a">Självklart! Ingen bindningstid. Testa en månad och se resultatet. Boka en gratis demo så visar vi hur det fungerar.</div>
+    </div>
+</div>
+
+<div class="footer">
+    <h2 style="border: none; margin-top: 0;">Redo att börja sälja?</h2>
+    <p>Kontakta oss för att bli partner och börja tjäna 30% provision.<br>
+    Vi ger dig allt material du behöver.</p>
+    <p style="margin-top: 30px; font-size: 12px; color: #666;">Reception.ai - AI-receptionist för svenska företag</p>
+</div>
+
+</body>
+</html>

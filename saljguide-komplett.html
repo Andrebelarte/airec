@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reception.ai - Komplett Säljguide för Partners</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #111;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        @media print {
+            body { padding: 20px; font-size: 11px; }
+            .page-break { page-break-before: always; }
+            h2 { font-size: 18px; }
+            h3 { font-size: 14px; }
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #000;
+        }
+        h3 {
+            font-size: 16px;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 2px solid #000;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #444;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border: 2px solid #000;
+            margin: 30px 0;
+        }
+        .stat {
+            padding: 20px;
+            text-align: center;
+            border-right: 2px solid #000;
+        }
+        .stat:last-child {
+            border-right: none;
+        }
+        .stat-value {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .price-card {
+            border: 2px solid #000;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .price-card.featured {
+            background: #000;
+            color: #fff;
+        }
+        .price-card h3 {
+            margin-top: 0;
+        }
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .price-sub {
+            color: #666;
+            font-size: 14px;
+        }
+        .price-card.featured .price-sub {
+            color: #999;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: #f5f5f5;
+            border: 2px solid #000;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .commission-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .commission-card {
+            border: 2px solid #000;
+            padding: 20px;
+            text-align: center;
+        }
+        .commission-card.dark {
+            background: #000;
+            color: #fff;
+        }
+        .qa-section {
+            margin: 20px 0;
+        }
+        .qa-item {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #eee;
+        }
+        .qa-q {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        .qa-a {
+            color: #333;
+            padding-left: 16px;
+            border-left: 3px solid #000;
+        }
+        .sales-tip {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .sales-tip h4 {
+            margin-bottom: 8px;
+        }
+        .objection-box {
+            border: 2px solid #000;
+            margin-bottom: 16px;
+        }
+        .objection-header {
+            background: #f5f5f5;
+            padding: 12px 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+        }
+        .objection-answer {
+            padding: 16px;
+        }
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #000;
+            text-align: center;
+        }
+        .free-trial-box {
+            background: #000;
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+            margin: 24px 0;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            border: 2px solid #000;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="subtitle">Komplett Partnerguide</div>
+    <h1>Reception.ai</h1>
+    <p>Alla svar du behöver för att sälja AI-receptionist</p>
+</div>
+
+<!-- ==================== GRUNDLÄGGANDE ==================== -->
+<h2>Grundläggande - Vad är Reception.ai?</h2>
+
+<div class="qa-section">
+    <div class="qa-item">
+        <div class="qa-q">Vad är en AI-receptionist egentligen?</div>
+        <div class="qa-a">En AI som svarar på telefonsamtal åt företag, dygnet runt. Den pratar naturlig svenska, hanterar kundfrågor, bokar möten direkt i kalendern, tar meddelanden och kopplar vidare viktiga samtal - precis som en mänsklig receptionist, men alltid tillgänglig.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Hur skiljer den sig från en vanlig chattbot?</div>
+        <div class="qa-a">En chattbot svarar på text - vår AI svarar i telefon med en naturlig röst. Den förstår vad kunden säger, för en riktig konversation och kan agera direkt (boka möten, skicka bekräftelser). Det är som skillnaden mellan att chatta med en robot och att prata med en receptionist.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Svarar den i telefon, chatt, eller både och?</div>
+        <div class="qa-a"><strong>Främst telefon</strong> - det är vår kärnprodukt. Men skulle kunden vilja ha en chattbot till sin hemsida kan det läggas till som tillägg för ett extra pris.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Vilket språk pratar den – bara svenska?</div>
+        <div class="qa-a">Svenska är primärspråket och det vi är bäst på. Men <strong>ja, fler språk stöds</strong> om kunden har internationella kunder eller behöver engelska/andra språk.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Kan den låta som ett riktigt företag, eller låter det robotigt?</div>
+        <div class="qa-a">Den låter naturlig och professionell - inte som de gamla "Tryck 1 för support"-systemen. <strong>Vi har ljudexempel</strong> som vi kan spela upp under demon. Enterprise-kunder kan dessutom få en helt anpassad röst för sitt varumärke.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Hur lång tid tar det att sätta upp den?</div>
+        <div class="qa-a"><strong>En dag.</strong> Processen är: 1) Boka demo 2) Vi samlar in info om företaget 3) Vi konfigurerar AI:n 4) Vi kopplar numret 5) Klart - AI:n börjar svara.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Vad behöver kunden göra själv för att komma igång?</div>
+        <div class="qa-a">Kunden behöver ge oss all information de vill att AI:n ska kunna svara på: öppettider, tjänster, priser, vanliga frågor, bokningsregler, etc. Ju mer info, desto bättre blir AI:n. <strong>Vi hjälper till att strukturera allt.</strong></div>
+    </div>
+</div>
+
+<div class="free-trial-box">
+    <h3 style="margin: 0 0 8px 0;">14 dagars gratis test</h3>
+    <p style="margin: 0;">Under testperioden justerar vi AI:n kontinuerligt så den lär sig mer och anpassas helt efter kundens behov.</p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== FUNKTIONER ==================== -->
+<h2>Funktioner - Vad kan AI:n göra?</h2>
+
+<div class="qa-section">
+    <div class="qa-item">
+        <div class="qa-q">Kan den boka möten direkt i kalendern?</div>
+        <div class="qa-a"><strong>Ja</strong> - Pro och Enterprise har kalenderintegration. AI:n ser lediga tider och bokar direkt medan kunden är i telefon.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Kan den skicka bekräftelser via SMS eller e-post?</div>
+        <div class="qa-a"><strong>Ja.</strong> Start-planen har email-notiser. Pro och Enterprise har även SMS-notiser så kunden får bekräftelse direkt.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Kan den svara på specifika frågor om kundens produkter/tjänster?</div>
+        <div class="qa-a"><strong>Ja</strong> - AI:n tränas på all information kunden ger oss. Öppettider, priser, tjänster, lediga tider, vägbeskrivning, policies - allt som kunden vill att AI:n ska kunna svara på.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Vad händer om den inte kan svara – kopplar den vidare?</div>
+        <div class="qa-a"><strong>Ja.</strong> Pro och Enterprise har vidarekoppling. AI:n kan koppla viktiga samtal direkt till rätt person baserat på regler ni sätter upp. Annars tar den ett meddelande.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Kan den hantera klagomål?</div>
+        <div class="qa-a">AI:n är tränad att hantera upprörda kunder lugnt och professionellt. Den eskalerar aldrig konflikter utan <strong>bekräftar kundens frustration</strong>, erbjuder att koppla vidare till en ansvarig person, eller tar ett meddelande så rätt person kan ringa tillbaka. Vid behov kopplas samtalet automatiskt till en människa.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Kan den ta emot beställningar?</div>
+        <div class="qa-a"><strong>Ja, delvis.</strong> AI:n kan ta emot beställningsinfo och skriva upp det (t.ex. i Excel eller ett delat dokument) så att kunden sedan kan lägga in beställningen manuellt. Exakt hur det fungerar beror på vilket system kunden har.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Fungerar den dygnet runt, även på helger och röda dagar?</div>
+        <div class="qa-a"><strong>Ja, 24/7/365.</strong> Julafton, midsommar, mitt i natten - AI:n svarar alltid. Aldrig sjuk, aldrig semester.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Kan man anpassa vad den säger och hur den låter?</div>
+        <div class="qa-a">Absolut. Vi anpassar AI:ns svar och ton efter kundens önskemål under onboarding. Enterprise-kunder kan få en helt unik AI-röst för sitt varumärke. Just nu går ändringar via oss - en kundportal för självservice kommer längre fram.</div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== TEKNIK & INTEGRATION ==================== -->
+<h2>Teknik & Integration</h2>
+
+<div class="qa-section">
+    <div class="qa-item">
+        <div class="qa-q">Måste kunden byta telefonoperatör?</div>
+        <div class="qa-a"><strong>Nej.</strong> Vi kan antingen ge kunden ett nytt dedikerat nummer, eller så kan de vidarekoppla sitt befintliga nummer till AI-receptionisten. Kunden behåller sin operatör och sina avtal. Vi använder marknadsledande plattformar (Twilio) för hög tillgänglighet och kvalitet.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Integrerar den med befintliga system som bokningssystem, CRM osv?</div>
+        <div class="qa-a"><strong>Ja.</strong> Vi integrerar med de flesta populära kalender- och bokningssystem. Under onboarding går vi igenom vilka system kunden använder och säkerställer att integrationen fungerar smidigt. Enterprise har CRM-integration och API-tillgång för mer avancerade behov.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Hur säkert är det – vad händer med kunddata?</div>
+        <div class="qa-a">All data lagras säkert med kryptering. Samtalsinspelningar (för de planer som har det) sparas säkert och kunden har full kontroll över sin data. Vi följer branschstandard för datasäkerhet.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">GDPR-kompatibel?</div>
+        <div class="qa-a"><strong>Ja.</strong> Vi följer GDPR fullt ut. Data lagras inom EU och vi kan tillhandahålla databehandlingsavtal (DPA) vid behov.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Vad händer om internetuppkopplingen går ner?</div>
+        <div class="qa-a">Vår infrastruktur har inbyggd redundans. Om något skulle hända på vår sida har Enterprise-kunder SLA-garanti. Om <em>kundens</em> internet går ner påverkar det inte AI:n - den körs i molnet och svarar ändå.</div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== PRISSÄTTNING ==================== -->
+<h2>Prissättning</h2>
+
+<div class="qa-section">
+    <div class="qa-item">
+        <div class="qa-q">Vad kostar det per månad?</div>
+        <div class="qa-a">
+            <table>
+                <tr><th>Plan</th><th>Pris</th><th>Samtal</th></tr>
+                <tr><td>Start</td><td><strong>2 495 kr/mån</strong></td><td>100 samtal</td></tr>
+                <tr><td>Pro</td><td><strong>4 995 kr/mån</strong></td><td>500 samtal</td></tr>
+                <tr><td>Enterprise</td><td><strong>9 995 kr/mån</strong></td><td>Obegränsat</td></tr>
+                <tr><td>Livstid</td><td><strong>49 995 kr</strong> engång</td><td>Obegränsat för alltid</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Vad händer om man går över antal samtal?</div>
+        <div class="qa-a">Extra samtal utöver inkluderade kostar <strong>49 kr per samtal</strong>. Kunden får en notis när de närmar sig gränsen och kan enkelt uppgradera till en större plan istället - ofta mer ekonomiskt.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Hur lång är bindningstiden?</div>
+        <div class="qa-a"><strong>Ingen bindningstid.</strong> Alla planer är utan bindning. Avsluta när du vill.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Kan man testa gratis?</div>
+        <div class="qa-a"><strong>Ja! 14 dagars gratis testperiod.</strong> Under denna period justerar vi AI:n kontinuerligt så den lär sig mer och anpassas helt efter kundens behov. Ingen betalning förrän testperioden är slut.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Vad ingår i grundpaketet och vad kostar extra?</div>
+        <div class="qa-a">Allt som listas i respektive plan ingår utan dolda kostnader. Webbchatt är ett tillägg för de som vill ha det. Extra samtal utöver inkluderade: 49 kr/samtal.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Finns det volymrabatt om man är ett större företag?</div>
+        <div class="qa-a"><strong>Ja.</strong> Större företag eller de som behöver flera linjer/nummer kan få anpassade priser. Kontakta oss för offert.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Vad händer om man vill avsluta?</div>
+        <div class="qa-a">Ingen bindningstid - avsluta när som helst. Ändringen gäller omedelbart.</div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== PROVISION ==================== -->
+<h2>Din provision som partner - 30%</h2>
+
+<p>Som partner får du <strong>30% provision på alla kunder du säljer in</strong>. Provisionen betalas ut varje månad så länge kunden är aktiv. Ingen startavgift.</p>
+
+<div class="commission-grid">
+    <div class="commission-card">
+        <div style="font-size: 14px; color: #666;">Start-kund</div>
+        <div style="font-size: 12px; color: #999; margin-bottom: 8px;">2 495 kr/mån</div>
+        <div style="font-size: 28px; font-weight: bold;">749 kr</div>
+        <div style="font-size: 12px; color: #666;">per kund/månad</div>
+    </div>
+    <div class="commission-card">
+        <div style="font-size: 14px; color: #666;">Pro-kund</div>
+        <div style="font-size: 12px; color: #999; margin-bottom: 8px;">4 995 kr/mån</div>
+        <div style="font-size: 28px; font-weight: bold;">1 499 kr</div>
+        <div style="font-size: 12px; color: #666;">per kund/månad</div>
+    </div>
+    <div class="commission-card dark" style="background: #000; color: #fff;">
+        <div style="font-size: 14px; color: #999;">Enterprise-kund</div>
+        <div style="font-size: 12px; color: #666; margin-bottom: 8px;">9 995 kr/mån</div>
+        <div style="font-size: 28px; font-weight: bold;">2 999 kr</div>
+        <div style="font-size: 12px; color: #999;">per kund/månad</div>
+    </div>
+</div>
+
+<h3>Räkneexempel - din månadsintäkt</h3>
+<table>
+    <tr>
+        <th>Antal kunder</th>
+        <th>Plan</th>
+        <th>Din intäkt/månad</th>
+        <th>Din intäkt/år</th>
+    </tr>
+    <tr><td>5 kunder</td><td>Pro</td><td>7 495 kr</td><td>89 940 kr</td></tr>
+    <tr><td>10 kunder</td><td>Pro</td><td>14 990 kr</td><td>179 880 kr</td></tr>
+    <tr><td>5 kunder</td><td>Enterprise</td><td>14 995 kr</td><td>179 940 kr</td></tr>
+</table>
+
+<h3>Livstid-provision (engångsköp 49 995 kr)</h3>
+<p>Din provision: <strong>14 999 kr</strong> per såld Livstid-licens.</p>
+
+<div class="page-break"></div>
+
+<!-- ==================== INVÄNDNINGAR ==================== -->
+<h2>Invändningar och svar</h2>
+
+<div class="objection-box">
+    <div class="objection-header">"Vi har redan en sekreterare/receptionist"</div>
+    <div class="objection-answer">
+        "Perfekt! AI:n ersätter inte er receptionist - den <strong>kompletterar</strong>. AI:n tar över utanför kontorstid, vid lunch, semester och sjukdom. Så ni aldrig missar ett enda samtal. Er receptionist kan fokusera på det viktigaste medan AI:n tar resten."
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Det låter dyrt"</div>
+    <div class="objection-answer">
+        "2 495 kr/mån är ungefär vad ett missat kundsamtal kostar. En mänsklig receptionist kostar 35 000+ kr/mån med arbetsgivaravgifter - ni <strong>sparar över 90%</strong>. Plus att AI:n är tillgänglig 24/7."
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Mina kunder vill prata med en riktig människa"</div>
+    <div class="objection-answer">
+        "Det förstår jag. Men vad vill de helst - prata med en människa som inte svarar, eller få hjälp direkt av en AI som låter naturlig? <strong>85% av kunder ringer inte tillbaka</strong> om ingen svarar. AI:n svarar alltid."
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Vi är för små för att behöva det här"</div>
+    <div class="objection-answer">
+        "Små företag missar ofta <em>flest</em> samtal - för att man är ute på jobb, i möten, eller helt enkelt inte hinner. <strong>Start-paketet för 2 495 kr</strong> är byggt just för småföretag."
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Vi hinner inte med att sätta upp det"</div>
+    <div class="objection-answer">
+        "<strong>Vi sköter allt.</strong> Ni bokar en demo, ger oss info om ert företag, och vi fixar resten. Ni är igång på en dag utan att lyfta ett finger."
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Vad händer om AI:n säger fel sak till en kund?"</div>
+    <div class="objection-answer">
+        "Under de <strong>14 dagars gratis testperiod</strong> finjusterar vi AI:n baserat på riktiga samtal. Om något blir fel rapporterar ni det så fixar vi det direkt. Vi kan också sätta upp regler för känsliga ämnen där AI:n alltid kopplar vidare istället för att svara själv."
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Vi har testat liknande grejer innan, det fungerade inte"</div>
+    <div class="objection-answer">
+        "Det har många sagt. Skillnaden är att Reception.ai är <strong>byggt för svenska marknaden</strong> med naturlig svensk röst och förståelse för svenska affärskonventioner. Vi är inte en amerikansk lösning översatt till svenska. Plus att vi har personlig onboarding och 14 dagars gratis test där vi justerar tills det fungerar."
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Skicka bara ett mail så tittar jag på det"</div>
+    <div class="objection-answer">
+        "Absolut! Men en <strong>10-minuters demo</strong> visar mycket bättre hur det fungerar - ni får höra AI:n i aktion. Kan vi boka 10 minuter denna vecka så skickar jag info efteråt?"
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Ring mig igen om tre månader"</div>
+    <div class="objection-answer">
+        "Självklart! Men räkna på det: om ni missar 5 samtal i veckan och varje kund är värd 2 000 kr - det är <strong>120 000 kr</strong> på tre månader. Varför vänta? Testa gratis i 14 dagar och se resultatet själv."
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Jag måste fråga min kollega/chef/partner"</div>
+    <div class="objection-answer">
+        "Förstår! Ska jag skicka info de kan titta på, eller ännu bättre - kan vi <strong>boka en kort demo där alla är med</strong>? Tar 10 minuter."
+    </div>
+</div>
+
+<div class="objection-box">
+    <div class="objection-header">"Vi klarar oss bra som det är"</div>
+    <div class="objection-answer">
+        "Det trodde de flesta av våra kunder också - tills de såg hur många samtal de faktiskt missade. <strong>62% av samtal sker utanför kontorstid.</strong> Svara på den här frågan ärligt: Hur många samtal missade ni förra veckan?"
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== ÖVRIGA FRÅGOR ==================== -->
+<h2>Övriga vanliga frågor</h2>
+
+<div class="qa-section">
+    <div class="qa-item">
+        <div class="qa-q">Hur vet AI:n vad den ska säga om mitt företag?</div>
+        <div class="qa-a">Under onboarding ger kunden oss all information: öppettider, tjänster, priser, vanliga frågor, hur de vill att samtal ska hanteras, etc. Ju mer info, desto bättre blir AI:n. Vi hjälper till att strukturera allt.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Kan jag ändra vad den säger när jag vill?</div>
+        <div class="qa-a">Ja, kontakta oss så uppdaterar vi. Just nu finns ingen självservice-portal, men det kommer längre fram. Ändringar görs vanligtvis samma dag.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Vad händer med samtalen – spelas de in?</div>
+        <div class="qa-a"><strong>Pro och Enterprise</strong> har samtalsinspelning inkluderat. Start-planen har det inte.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Hur många samtal kan den hantera samtidigt?</div>
+        <div class="qa-a"><strong>Obegränsat.</strong> Till skillnad från en människa som bara kan ta ett samtal i taget kan AI:n hantera hur många som helst parallellt.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Vad händer om en kund är arg eller svår?</div>
+        <div class="qa-a">AI:n hanterar det lugnt och professionellt - bekräftar frustrationen, erbjuder att koppla vidare till ansvarig, eller tar meddelande. Den eskalerar aldrig konflikter.</div>
+    </div>
+
+    <div class="qa-item">
+        <div class="qa-q">Kan den förstå dialekter eller stavfel?</div>
+        <div class="qa-a">AI:n är tränad på svenska och förstår olika accenter och dialekter väl. Den är byggd för att fungera i verkligheten, inte bara med perfekt uttal.</div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== STATISTIK & ROI ==================== -->
+<h2>Statistik & ROI</h2>
+
+<div class="stats">
+    <div class="stat">
+        <div class="stat-value">62%</div>
+        <div class="stat-label">Av samtal sker utanför kontorstid</div>
+    </div>
+    <div class="stat">
+        <div class="stat-value">85%</div>
+        <div class="stat-label">Ringer inte tillbaka om ingen svarar</div>
+    </div>
+    <div class="stat">
+        <div class="stat-value">8 sek</div>
+        <div class="stat-label">Max väntetid innan kunder lägger på</div>
+    </div>
+    <div class="stat">
+        <div class="stat-value">75%</div>
+        <div class="stat-label">Lämnar inte röstmeddelande</div>
+    </div>
+</div>
+
+<h3>Vad kostar det att missa samtal?</h3>
+
+<div class="stat-grid">
+    <div class="stat-card">
+        <div style="font-size: 14px; color: #666;">Genomsnittligt företag missar</div>
+        <div style="font-size: 32px; font-weight: bold;">20-30%</div>
+        <div style="font-size: 14px; color: #666;">av inkommande samtal</div>
+    </div>
+    <div class="stat-card">
+        <div style="font-size: 14px; color: #666;">Genomsnittligt kundvärde</div>
+        <div style="font-size: 32px; font-weight: bold;">500-5000 kr</div>
+        <div style="font-size: 14px; color: #666;">per nytt samtal</div>
+    </div>
+</div>
+
+<h3>ROI-kalkyl</h3>
+<table>
+    <tr>
+        <th>Scenario</th>
+        <th>Missade samtal</th>
+        <th>Kundvärde</th>
+        <th>Förlorad intäkt</th>
+    </tr>
+    <tr><td>Liten verksamhet</td><td>5/vecka</td><td>1 000 kr</td><td><strong>20 000 kr/mån</strong></td></tr>
+    <tr><td>Medelstor verksamhet</td><td>10/vecka</td><td>2 000 kr</td><td><strong>80 000 kr/mån</strong></td></tr>
+    <tr><td>Större verksamhet</td><td>20/vecka</td><td>3 000 kr</td><td><strong>240 000 kr/mån</strong></td></tr>
+</table>
+
+<div class="highlight-box">
+    <h3 style="margin-top: 0;">Snabb återbetalning</h3>
+    <p>Om AI:n fångar upp <strong>bara 1-2 nya kunder per månad</strong> har den betalat sig själv. Allt därutöver är ren vinst.</p>
+    <p style="margin-bottom: 0;"><strong>Exempel:</strong> Pro-plan kostar 4 995 kr. Om en ny kund är värd 3 000 kr behövs bara 2 fångade samtal för att gå plus.</p>
+</div>
+
+<h3>Tidsbesparing</h3>
+<table>
+    <tr><th>Uppgift</th><th>Utan AI</th><th>Med AI</th></tr>
+    <tr><td>Svara på 20 samtal/dag</td><td>60-90 min</td><td>0 min</td></tr>
+    <tr><td>Boka möten manuellt</td><td>30 min/dag</td><td>0 min</td></tr>
+    <tr><td>Svara på rutinfrågor</td><td>45 min/dag</td><td>0 min</td></tr>
+    <tr><td><strong>Total tid sparad</strong></td><td></td><td><strong>10-15 tim/vecka</strong></td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- ==================== MÅLGRUPPER ==================== -->
+<h2>Vem ska du kontakta?</h2>
+
+<table>
+    <tr>
+        <th>Bransch</th>
+        <th>Varför det passar</th>
+    </tr>
+    <tr><td><strong>Tandläkare & Vårdmottagningar</strong></td><td>Hög samtalsvolym, bokningar, patienter ringer utanför öppettider</td></tr>
+    <tr><td><strong>Konsultbolag & Advokater</strong></td><td>Vill fokusera på klientarbete, inte svara i telefon</td></tr>
+    <tr><td><strong>Frisörer & Skönhetssalonger</strong></td><td>Kan inte svara medan de jobbar med kunder</td></tr>
+    <tr><td><strong>Fastighetsbolag</strong></td><td>Många frågor om lediga objekt, visningar</td></tr>
+    <tr><td><strong>Restauranger & Hotell</strong></td><td>Bokningar dygnet runt, hektisk miljö</td></tr>
+    <tr><td><strong>Verkstäder & Hantverkare</strong></td><td>Ute på jobb, kan inte svara i telefon</td></tr>
+    <tr><td><strong>Gym & Träningsanläggningar</strong></td><td>Medlemsfrågor, nya intressenter ringer hela tiden</td></tr>
+    <tr><td><strong>E-handel med telefonsupport</strong></td><td>Kundfrågor, orderstatus, returer</td></tr>
+    <tr><td><strong>Redovisning & Ekonomi</strong></td><td>Fokus på kundarbete, inte administration</td></tr>
+    <tr><td><strong>Terapeuter & Psykologer</strong></td><td>Kan inte svara under sessioner</td></tr>
+</table>
+
+<div class="sales-tip">
+    <h4>De bästa frågorna att ställa:</h4>
+    <ul style="margin-bottom: 0;">
+        <li>"Hur många samtal missar ni per vecka?"</li>
+        <li>"Vad händer när ni inte kan svara i telefon?"</li>
+        <li>"Hur mycket är en ny kund värd för er?"</li>
+        <li>"Hur hanterar ni samtal utanför kontorstid?"</li>
+        <li>"Hur mycket tid lägger ni på att svara på rutinfrågor?"</li>
+    </ul>
+</div>
+
+<div class="footer">
+    <h2 style="border: none; margin-top: 0;">Sammanfattning</h2>
+    <p><strong>14 dagars gratis test</strong> - Ingen risk<br>
+    <strong>Ingen bindningstid</strong> - Avsluta när som helst<br>
+    <strong>30% provision</strong> - Varje månad, så länge kunden är aktiv</p>
+    <p style="margin-top: 30px; font-size: 12px; color: #666;">Reception.ai - AI-receptionist för svenska företag</p>
+</div>
+
+</body>
+</html>
