@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 
-// Web3Forms access key. Get a free key at https://web3forms.com and set it as
-// NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY (locally in .env.local and in Vercel's
-// project settings → Environment Variables). The key is public/safe to expose.
-const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "";
+// Web3Forms access key. This is a public key (safe to expose in client code).
+// Manage submissions/destination at https://web3forms.com. Can be overridden
+// with the NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY environment variable if needed.
+const ACCESS_KEY =
+  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ??
+  "9cc5622f-0f88-4caa-8303-5722facd54ce";
 
 type Status = "idle" | "sending" | "success" | "error";
 
