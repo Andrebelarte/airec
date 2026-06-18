@@ -64,8 +64,83 @@ export default function Priser() {
     },
   ];
 
+  const faqs = [
+    {
+      q: "Vad händer om jag överskrider antal samtal?",
+      a: "Du får en notis och kan enkelt uppgradera. Inga dolda avgifter.",
+    },
+    {
+      q: "Kan jag byta plan?",
+      a: "Ja, uppgradera eller nedgradera när som helst. Ändringen gäller direkt.",
+    },
+    {
+      q: "Finns det bindningstid?",
+      a: "Nej, alla planer är utan bindning. Avsluta när du vill.",
+    },
+    {
+      q: "Vad ingår i 'Anpassad röst'?",
+      a: "Vi skapar en unik AI-röst för ditt varumärke med din ton och stil.",
+    },
+  ];
+
+  const siteUrl = "https://www.elexio.se";
+
+  const productLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Elexio AI-receptionist",
+    description:
+      "Svensktalande AI-receptionist som svarar i telefon dygnet runt, bokar möten och svarar på frågor.",
+    brand: { "@type": "Brand", name: "Elexio" },
+    url: `${siteUrl}/priser`,
+    image: `${siteUrl}/opengraph-image`,
+    offers: [
+      ...plans.map((plan) => ({
+        "@type": "Offer",
+        name: `Elexio ${plan.name}`,
+        priceCurrency: "SEK",
+        price: plan.price.replace(/\s/g, ""),
+        availability: "https://schema.org/InStock",
+        url: `${siteUrl}/priser`,
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          priceCurrency: "SEK",
+          price: plan.price.replace(/\s/g, ""),
+          unitCode: "MON",
+          unitText: "månad",
+        },
+      })),
+      {
+        "@type": "Offer",
+        name: "Elexio Livstid",
+        priceCurrency: "SEK",
+        price: "49995",
+        availability: "https://schema.org/InStock",
+        url: `${siteUrl}/priser`,
+      },
+    ],
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <p className="text-sm uppercase tracking-wider text-gray-400 mb-6">
@@ -255,24 +330,7 @@ export default function Priser() {
             Vanliga frågor
           </div>
           <div className="grid md:grid-cols-2 gap-x-16 gap-y-10 max-w-4xl">
-            {[
-              {
-                q: "Vad händer om jag överskrider antal samtal?",
-                a: "Du får en notis och kan enkelt uppgradera. Inga dolda avgifter.",
-              },
-              {
-                q: "Kan jag byta plan?",
-                a: "Ja, uppgradera eller nedgradera när som helst. Ändringen gäller direkt.",
-              },
-              {
-                q: "Finns det bindningstid?",
-                a: "Nej, alla planer är utan bindning. Avsluta när du vill.",
-              },
-              {
-                q: "Vad ingår i 'Anpassad röst'?",
-                a: "Vi skapar en unik AI-röst för ditt varumärke med din ton och stil.",
-              },
-            ].map((faq, i) => (
+            {faqs.map((faq, i) => (
               <div key={i}>
                 <h3 className="font-bold mb-2">{faq.q}</h3>
                 <p className="text-gray-600">{faq.a}</p>
