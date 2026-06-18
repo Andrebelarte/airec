@@ -72,9 +72,32 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Elexio",
+    url: siteUrl,
+    description:
+      "Svensktalande AI-receptionist som svarar i telefon dygnet runt, bokar möten och svarar på frågor.",
+    logo: `${siteUrl}/opengraph-image`,
+    image: `${siteUrl}/opengraph-image`,
+    areaServed: "SE",
+    knowsLanguage: "sv-SE",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      areaServed: "SE",
+      availableLanguage: "Swedish",
+    },
+  };
+
   return (
     <html lang="sv" className={`${spaceMono.variable} ${spaceGrotesk.variable}`}>
       <body className="min-h-screen flex flex-col font-[family-name:var(--font-space-grotesk)]">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
