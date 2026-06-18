@@ -20,7 +20,8 @@ export default function ContactForm() {
     setStatus("sending");
     setErrorMsg("");
 
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     const payload = {
       ...Object.fromEntries(formData.entries()),
       access_key: ACCESS_KEY,
@@ -41,7 +42,7 @@ export default function ContactForm() {
 
       if (res.ok && data.success) {
         setStatus("success");
-        event.currentTarget.reset();
+        form.reset();
       } else {
         setStatus("error");
         setErrorMsg(data.message ?? "Något gick fel. Försök igen.");
