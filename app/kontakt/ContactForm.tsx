@@ -21,15 +21,21 @@ export default function ContactForm() {
     setErrorMsg("");
 
     const formData = new FormData(event.currentTarget);
-    formData.append("access_key", ACCESS_KEY);
-    formData.append("subject", "Nytt meddelande från elexio.se");
-    formData.append("from_name", "Elexio kontaktformulär");
+    const payload = {
+      ...Object.fromEntries(formData.entries()),
+      access_key: ACCESS_KEY,
+      subject: "Nytt meddelande från elexio.se",
+      from_name: "Elexio kontaktformulär",
+    };
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { Accept: "application/json" },
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
       });
       const data = await res.json();
 
