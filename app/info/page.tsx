@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Så fungerar det",
+  description:
+    "Så fungerar Elexio – en AI-receptionist som tar hand om dina samtal. Enkelt att komma igång och alltid tillgänglig på svenska.",
+  alternates: { canonical: "/info" },
+};
 
 export default function Info() {
   return (

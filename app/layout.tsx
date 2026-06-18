@@ -15,9 +15,56 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://elexio.se";
+
 export const metadata: Metadata = {
-  title: "Elexio",
-  description: "AI-receptionist för svenska företag",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Elexio – AI-receptionist för svenska företag",
+    template: "%s | Elexio",
+  },
+  description:
+    "Elexio är en svensktalande AI-receptionist som svarar i telefon dygnet runt, bokar möten och svarar på frågor. Missa aldrig ett samtal igen.",
+  keywords: [
+    "AI-receptionist",
+    "AI telefonsvarare",
+    "svensk AI",
+    "automatisk telefonsvarare",
+    "AI för företag",
+    "samtalshantering",
+    "bokningssystem",
+  ],
+  authors: [{ name: "Elexio" }],
+  creator: "Elexio",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "sv_SE",
+    url: siteUrl,
+    siteName: "Elexio",
+    title: "Elexio – AI-receptionist för svenska företag",
+    description:
+      "En svensktalande AI som hanterar samtal, bokar möten och svarar på frågor. Dygnet runt, alltid tillgänglig.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Elexio – AI-receptionist för svenska företag",
+    description:
+      "En svensktalande AI som hanterar samtal, bokar möten och svarar på frågor. Dygnet runt, alltid tillgänglig.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({

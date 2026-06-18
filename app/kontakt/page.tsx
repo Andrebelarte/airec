@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+import ContactForm from "./ContactForm";
+
+export const metadata: Metadata = {
+  title: "Kontakt",
+  description:
+    "Hör av dig till Elexio. Vi svarar inom 24 timmar – boka en demo eller ställ dina frågor om vår AI-receptionist.",
+  alternates: { canonical: "/kontakt" },
+};
+
 export default function Kontakt() {
   return (
     <div>
@@ -38,74 +48,7 @@ export default function Kontakt() {
 
             {/* Form */}
             <div className="md:col-span-2 p-8 md:p-12">
-              <form className="space-y-6 max-w-lg">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">
-                      Namn
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      className="w-full border-2 border-black px-4 py-3 focus:outline-none focus:bg-gray-50"
-                      placeholder="Ditt namn"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">
-                      Företag
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full border-2 border-black px-4 py-3 focus:outline-none focus:bg-gray-50"
-                      placeholder="Ditt företag"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    className="w-full border-2 border-black px-4 py-3 focus:outline-none focus:bg-gray-50"
-                    placeholder="din@email.se"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">
-                    Jag är intresserad av
-                  </label>
-                  <select className="w-full border-2 border-black px-4 py-3 focus:outline-none focus:bg-gray-50 bg-white">
-                    <option>AI-reception för mitt företag</option>
-                    <option>Partnerskap</option>
-                    <option>Demo</option>
-                    <option>Annat</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-wider text-gray-400 mb-2">
-                    Meddelande
-                  </label>
-                  <textarea
-                    required
-                    rows={4}
-                    className="w-full border-2 border-black px-4 py-3 focus:outline-none focus:bg-gray-50 resize-none"
-                    placeholder="Berätta mer..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="bg-black text-white px-8 py-4 text-sm hover:bg-gray-800 transition-colors w-full md:w-auto"
-                >
-                  Skicka
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>

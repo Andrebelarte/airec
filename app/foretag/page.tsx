@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "AI-receptionist för företag",
+  description:
+    "Missa aldrig ett samtal igen. Oavsett bransch eller storlek – en svensktalande AI-receptionist som svarar, bokar och hjälper dina kunder dygnet runt.",
+  alternates: { canonical: "/foretag" },
+};
 
 export default function Foretag() {
   return (

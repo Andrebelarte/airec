@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Elexio – AI-receptionist som svarar dygnet runt",
+  description:
+    "Elexio svarar när du inte kan – dygnet runt. En svensktalande AI som hanterar samtal, bokar möten och svarar på frågor. Boka en demo idag.",
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

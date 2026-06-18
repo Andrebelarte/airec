@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Partnerprogram – sälj AI och tjäna pengar",
+  description:
+    "Bli partner till Elexio och tjäna 30% provision på alla kunder, varje månad så länge de är aktiva. Sälj AI-receptionist till svenska företag.",
+  alternates: { canonical: "/partner" },
+};
 
 export default function Partner() {
   return (

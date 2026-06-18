@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Priser och planer",
+  description:
+    "Se Elexios priser – från 2 495 kr/mån för småföretag till obegränsade planer. Svensktalande AI-receptionist utan startavgift.",
+  alternates: { canonical: "/priser" },
+};
 
 export default function Priser() {
   const plans = [
