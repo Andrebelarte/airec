@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://elexio.se";
+const siteUrl = "https://www.elexio.se";
 
 export const dynamic = "force-static";
 

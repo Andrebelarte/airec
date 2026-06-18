@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://elexio.se";
+const siteUrl = "https://www.elexio.se";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
